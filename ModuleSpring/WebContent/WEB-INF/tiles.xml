@@ -1,0 +1,48 @@
+<!DOCTYPE tiles-definitions PUBLIC
+ "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+ "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+ <definition name="bg" template="/template/bg.jsp">
+ <put-attribute name="title" value="Title"/>
+ </definition>
+ <definition name="template" extends="bg">
+ <put-attribute name="title" value="Template Example"/>
+ <put-attribute name="content" value="/views/template.jsp" />
+ </definition>
+ <definition name="upload" extends="bg">
+ <put-attribute name="title" value="Template Example"/>
+ <put-attribute name="content" value="/views/upload.jsp" />
+ </definition>
+ <definition name="multiupload" extends="bg">
+ <put-attribute name="title" value="Template Example"/>
+ <put-attribute name="content" value="/views/multiupload.jsp" />
+ </definition>
+ <definition name="sendmail" extends="bg">
+ <put-attribute name="title" value="mail"/>
+ <put-attribute name="content" value="/views/sendmail.jsp" />
+ </definition>
+ <definition name="author.index" extends="bg">
+ <put-attribute name="title" value="author"/>
+ <put-attribute name="content" value="/views/author/index.jsp" />
+ </definition>
+ <definition name="author.add" extends="bg">
+ <put-attribute name="title" value="add author"/>
+ <put-attribute name="content" value="/views/author/add.jsp" />
+ </definition>
+ <definition name="author.edit" extends="bg">
+ <put-attribute name="title" value="add author"/>
+ <put-attribute name="content" value="/views/author/edit.jsp" />
+ </definition>
+ <definition name="category.index" extends="bg">
+ <put-attribute name="title" value="category"/>
+ <put-attribute name="content" value="/views/category/index.jsp" />
+ </definition>
+ <definition name="category.add" extends="bg">
+ <put-attribute name="title" value="add category"/>
+ <put-attribute name="content" value="/views/category/add.jsp" />
+ </definition>
+ <definition name="category.edit" extends="bg">
+ <put-attribute name="title" value="add category"/>
+ <put-attribute name="content" value="/views/category/edit.jsp" />
+ </definition>
+</tiles-definitions>
