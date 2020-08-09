@@ -1,10 +1,10 @@
 package model;
 
 public class Category {
-	private Integer id;
+	private int id;
 	private String name;
 	private Integer parent;
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
 	public void setId(int id) {

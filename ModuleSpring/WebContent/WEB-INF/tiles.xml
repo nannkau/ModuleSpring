@@ -45,4 +45,13 @@
  <put-attribute name="title" value="add category"/>
  <put-attribute name="content" value="/views/category/edit.jsp" />
  </definition>
+ <definition name="home.index" extends="bg">
+ <put-attribute name="title" value="home"/>
+ <put-attribute name="content" value="/views/home/index.jsp" />
+ </definition>
+ <definition name="home.detail" extends="bg">
+ <put-attribute name="title" value="home"/>
+ <put-attribute name="content" value="/views/home/detail.jsp" />
+ </definition>
+ 
 </tiles-definitions>

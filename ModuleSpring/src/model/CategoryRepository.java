@@ -59,7 +59,7 @@ public class CategoryRepository extends Repository {
 
 	}
 	public int edit(Category category) {
-		return jdbc.update("UPDATE category SET CategoryName = ? ParentId = ? WHERE CategoryId=?",category.getName(),category.getParent(),category.getId());
+		return jdbc.update("UPDATE category SET CategoryName = ? , ParentId = ? WHERE CategoryId=?",category.getName(),category.getParent(),category.getId());
 		
 	}
 

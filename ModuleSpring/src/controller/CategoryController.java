@@ -48,12 +48,15 @@ public class CategoryController {
 		for (Category category : categories) {
 			map.put(category.getId(), category.getName());
 		}
+		System.out.print(map.size()+"====");
 		model.addAttribute("map", map);
-		model.addAttribute("obj", repository.findById(id));
+		Category category= repository.findById(id);
+		System.out.print(category.getName());
+		model.addAttribute("obj", category);
 		return "category.edit";
 	}
 	@RequestMapping(value="edit.html/{id}", method=RequestMethod.POST)
-	public String edit(Category obj,Model model) {
+	public String edit(Model model,Category obj,@PathVariable("id") int id) {
 		repository.edit(obj);
 		return "redirect:/admin/category/index.html";
 		
